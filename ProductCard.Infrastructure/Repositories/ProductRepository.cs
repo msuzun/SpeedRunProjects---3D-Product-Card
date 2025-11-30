@@ -17,7 +17,7 @@ public class ProductRepository : IProductRepository
                 Name = "Nike Air Max 90",
                 Description = "Classic sneaker with iconic design and superior comfort. Perfect for everyday wear.",
                 Price = 129.99m,
-                ModelUrl = "/models/nike-air-max-90.glb",
+                ModelUrl = "https://raw.githubusercontent.com/KhronosGroup/glTF-Sample-Models/master/2.0/MaterialsVariantsShoe/glTF-Binary/MaterialsVariantsShoe.glb",
                 BackgroundColor = "#FF6B6B"
             },
             new Product
@@ -26,7 +26,7 @@ public class ProductRepository : IProductRepository
                 Name = "Adidas Ultraboost 22",
                 Description = "Premium running shoe with responsive cushioning and energy return technology.",
                 Price = 179.99m,
-                ModelUrl = "/models/adidas-ultraboost-22.glb",
+                ModelUrl = "https://raw.githubusercontent.com/KhronosGroup/glTF-Sample-Models/master/2.0/MaterialsVariantsShoe/glTF-Binary/MaterialsVariantsShoe.glb",
                 BackgroundColor = "#4ECDC4"
             },
             new Product
@@ -35,7 +35,7 @@ public class ProductRepository : IProductRepository
                 Name = "Jordan 1 Retro High",
                 Description = "Legendary basketball sneaker with timeless style and heritage design.",
                 Price = 170.00m,
-                ModelUrl = "/models/jordan-1-retro-high.glb",
+                ModelUrl = "https://raw.githubusercontent.com/KhronosGroup/glTF-Sample-Models/master/2.0/MaterialsVariantsShoe/glTF-Binary/MaterialsVariantsShoe.glb",
                 BackgroundColor = "#45B7D1"
             },
             new Product
@@ -44,7 +44,7 @@ public class ProductRepository : IProductRepository
                 Name = "New Balance 550",
                 Description = "Vintage-inspired basketball sneaker with premium materials and retro aesthetics.",
                 Price = 110.00m,
-                ModelUrl = "/models/new-balance-550.glb",
+                ModelUrl = "https://raw.githubusercontent.com/KhronosGroup/glTF-Sample-Models/master/2.0/MaterialsVariantsShoe/glTF-Binary/MaterialsVariantsShoe.glb",
                 BackgroundColor = "#FFA07A"
             },
             new Product
@@ -53,7 +53,7 @@ public class ProductRepository : IProductRepository
                 Name = "Puma Suede Classic",
                 Description = "Iconic suede sneaker with timeless design and versatile style.",
                 Price = 65.00m,
-                ModelUrl = "/models/puma-suede-classic.glb",
+                ModelUrl = "https://raw.githubusercontent.com/KhronosGroup/glTF-Sample-Models/master/2.0/MaterialsVariantsShoe/glTF-Binary/MaterialsVariantsShoe.glb",
                 BackgroundColor = "#98D8C8"
             }
         };

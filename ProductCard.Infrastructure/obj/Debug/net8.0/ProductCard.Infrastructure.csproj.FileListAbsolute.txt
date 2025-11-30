@@ -15,3 +15,4 @@ C:\Users\MSUZUN\Documents\VibeCoding\3D Product Card\ProductCard.Infrastructure\
 C:\Users\MSUZUN\Documents\VibeCoding\3D Product Card\ProductCard.Infrastructure\obj\Debug\net8.0\refint\ProductCard.Infrastructure.dll
 C:\Users\MSUZUN\Documents\VibeCoding\3D Product Card\ProductCard.Infrastructure\obj\Debug\net8.0\ProductCard.Infrastructure.pdb
 C:\Users\MSUZUN\Documents\VibeCoding\3D Product Card\ProductCard.Infrastructure\obj\Debug\net8.0\ref\ProductCard.Infrastructure.dll
+C:\Users\MSUZUN\Documents\VibeCoding\3D Product Card\ProductCard.Infrastructure\obj\Debug\net8.0\ProductCard.Infrastructure.sourcelink.json

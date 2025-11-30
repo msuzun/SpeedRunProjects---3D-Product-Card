@@ -44,3 +44,4 @@ C:\Users\MSUZUN\Documents\VibeCoding\3D Product Card\ProductCard.API\obj\Debug\n
 C:\Users\MSUZUN\Documents\VibeCoding\3D Product Card\ProductCard.API\obj\Debug\net8.0\ProductCard.API.genruntimeconfig.cache
 C:\Users\MSUZUN\Documents\VibeCoding\3D Product Card\ProductCard.API\obj\Debug\net8.0\ref\ProductCard.API.dll
 C:\Users\MSUZUN\Documents\VibeCoding\3D Product Card\ProductCard.API\obj\Debug\net8.0\staticwebassets.upToDateCheck.txt
+C:\Users\MSUZUN\Documents\VibeCoding\3D Product Card\ProductCard.API\obj\Debug\net8.0\ProductCard.API.sourcelink.json

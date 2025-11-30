@@ -1,7 +1,7 @@
 import { useQuery } from '@tanstack/react-query';
 import { Product } from '@/types/product';
 
-const API_BASE_URL = import.meta.env.VITE_API_BASE_URL || 'https://localhost:5001';
+const API_BASE_URL = import.meta.env.VITE_API_BASE_URL || 'https://localhost:7060';
 
 interface UseProductOptions {
   productId: string;
@@ -19,11 +19,11 @@ interface ProductResponse {
 
 const fetchProduct = async (productId: string): Promise<ProductResponse> => {
   const response = await fetch(`${API_BASE_URL}/api/products/${productId}`);
-  
+
   if (!response.ok) {
     throw new Error(`Failed to fetch product: ${response.statusText}`);
   }
-  
+
   return response.json();
 };
 
