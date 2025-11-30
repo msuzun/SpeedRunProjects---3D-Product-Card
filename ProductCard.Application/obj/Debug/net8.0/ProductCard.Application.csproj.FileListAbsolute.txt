@@ -1,0 +1,15 @@
+C:\Users\MSUZUN\Documents\VibeCoding\3D Product Card\ProductCard.Application\bin\Debug\net8.0\ProductCard.Application.deps.json
+C:\Users\MSUZUN\Documents\VibeCoding\3D Product Card\ProductCard.Application\bin\Debug\net8.0\ProductCard.Application.dll
+C:\Users\MSUZUN\Documents\VibeCoding\3D Product Card\ProductCard.Application\bin\Debug\net8.0\ProductCard.Application.pdb
+C:\Users\MSUZUN\Documents\VibeCoding\3D Product Card\ProductCard.Application\bin\Debug\net8.0\ProductCard.Domain.dll
+C:\Users\MSUZUN\Documents\VibeCoding\3D Product Card\ProductCard.Application\bin\Debug\net8.0\ProductCard.Domain.pdb
+C:\Users\MSUZUN\Documents\VibeCoding\3D Product Card\ProductCard.Application\obj\Debug\net8.0\ProductCard.Application.csproj.AssemblyReference.cache
+C:\Users\MSUZUN\Documents\VibeCoding\3D Product Card\ProductCard.Application\obj\Debug\net8.0\ProductCard.Application.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\MSUZUN\Documents\VibeCoding\3D Product Card\ProductCard.Application\obj\Debug\net8.0\ProductCard.Application.AssemblyInfoInputs.cache
+C:\Users\MSUZUN\Documents\VibeCoding\3D Product Card\ProductCard.Application\obj\Debug\net8.0\ProductCard.Application.AssemblyInfo.cs
+C:\Users\MSUZUN\Documents\VibeCoding\3D Product Card\ProductCard.Application\obj\Debug\net8.0\ProductCard.Application.csproj.CoreCompileInputs.cache
+C:\Users\MSUZUN\Documents\VibeCoding\3D Product Card\ProductCard.Application\obj\Debug\net8.0\ProductC.6ABAE04E.Up2Date
+C:\Users\MSUZUN\Documents\VibeCoding\3D Product Card\ProductCard.Application\obj\Debug\net8.0\ProductCard.Application.dll
+C:\Users\MSUZUN\Documents\VibeCoding\3D Product Card\ProductCard.Application\obj\Debug\net8.0\refint\ProductCard.Application.dll
+C:\Users\MSUZUN\Documents\VibeCoding\3D Product Card\ProductCard.Application\obj\Debug\net8.0\ProductCard.Application.pdb
+C:\Users\MSUZUN\Documents\VibeCoding\3D Product Card\ProductCard.Application\obj\Debug\net8.0\ref\ProductCard.Application.dll

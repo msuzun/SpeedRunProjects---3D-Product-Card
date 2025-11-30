@@ -1,0 +1,17 @@
+C:\Users\MSUZUN\Documents\VibeCoding\3D Product Card\ProductCard.Infrastructure\bin\Debug\net8.0\ProductCard.Infrastructure.deps.json
+C:\Users\MSUZUN\Documents\VibeCoding\3D Product Card\ProductCard.Infrastructure\bin\Debug\net8.0\ProductCard.Infrastructure.dll
+C:\Users\MSUZUN\Documents\VibeCoding\3D Product Card\ProductCard.Infrastructure\bin\Debug\net8.0\ProductCard.Infrastructure.pdb
+C:\Users\MSUZUN\Documents\VibeCoding\3D Product Card\ProductCard.Infrastructure\bin\Debug\net8.0\ProductCard.Application.dll
+C:\Users\MSUZUN\Documents\VibeCoding\3D Product Card\ProductCard.Infrastructure\bin\Debug\net8.0\ProductCard.Domain.dll
+C:\Users\MSUZUN\Documents\VibeCoding\3D Product Card\ProductCard.Infrastructure\bin\Debug\net8.0\ProductCard.Domain.pdb
+C:\Users\MSUZUN\Documents\VibeCoding\3D Product Card\ProductCard.Infrastructure\bin\Debug\net8.0\ProductCard.Application.pdb
+C:\Users\MSUZUN\Documents\VibeCoding\3D Product Card\ProductCard.Infrastructure\obj\Debug\net8.0\ProductCard.Infrastructure.csproj.AssemblyReference.cache
+C:\Users\MSUZUN\Documents\VibeCoding\3D Product Card\ProductCard.Infrastructure\obj\Debug\net8.0\ProductCard.Infrastructure.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\MSUZUN\Documents\VibeCoding\3D Product Card\ProductCard.Infrastructure\obj\Debug\net8.0\ProductCard.Infrastructure.AssemblyInfoInputs.cache
+C:\Users\MSUZUN\Documents\VibeCoding\3D Product Card\ProductCard.Infrastructure\obj\Debug\net8.0\ProductCard.Infrastructure.AssemblyInfo.cs
+C:\Users\MSUZUN\Documents\VibeCoding\3D Product Card\ProductCard.Infrastructure\obj\Debug\net8.0\ProductCard.Infrastructure.csproj.CoreCompileInputs.cache
+C:\Users\MSUZUN\Documents\VibeCoding\3D Product Card\ProductCard.Infrastructure\obj\Debug\net8.0\ProductC.2C22C343.Up2Date
+C:\Users\MSUZUN\Documents\VibeCoding\3D Product Card\ProductCard.Infrastructure\obj\Debug\net8.0\ProductCard.Infrastructure.dll
+C:\Users\MSUZUN\Documents\VibeCoding\3D Product Card\ProductCard.Infrastructure\obj\Debug\net8.0\refint\ProductCard.Infrastructure.dll
+C:\Users\MSUZUN\Documents\VibeCoding\3D Product Card\ProductCard.Infrastructure\obj\Debug\net8.0\ProductCard.Infrastructure.pdb
+C:\Users\MSUZUN\Documents\VibeCoding\3D Product Card\ProductCard.Infrastructure\obj\Debug\net8.0\ref\ProductCard.Infrastructure.dll
