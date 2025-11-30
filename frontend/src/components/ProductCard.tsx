@@ -1,19 +1,52 @@
-import { Suspense, useState } from 'react';
+import { Suspense, useState, useEffect } from 'react';
 import { Canvas } from '@react-three/fiber';
 import { OrbitControls } from '@react-three/drei';
 import { motion, AnimatePresence } from 'framer-motion';
-import { useProduct } from '../hooks/useProduct';
+import { useDispatch, useSelector } from 'react-redux';
+import { useProduct, useProductIds } from '../hooks/useProduct';
 import SneakerModel from './SneakerModel';
+import { RootState } from '../store/store';
+import { setProductIds, nextProduct, prevProduct } from '../store/productSlice';
 
 interface ProductCardProps {
-    productId: string;
+    productId?: string; // Optional now as we use Redux
 }
 
-export default function ProductCard({ productId }: ProductCardProps) {
-    const { data: product, isLoading, error } = useProduct({ productId });
+export default function ProductCard({ productId: initialProductId }: ProductCardProps) {
+    const dispatch = useDispatch();
+    const { productIds, currentProductIndex } = useSelector((state: RootState) => state.product);
+
+    // Fetch all product IDs
+    const { data: fetchedIds, isLoading: isLoadingIds } = useProductIds();
+
+    // Update Redux when IDs are fetched
+    useEffect(() => {
+        if (fetchedIds && fetchedIds.length > 0) {
+            dispatch(setProductIds(fetchedIds));
+        }
+    }, [fetchedIds, dispatch]);
+
+    // Determine current product ID
+    const currentProductId = productIds[currentProductIndex] || initialProductId;
+
+    const { data: product, isLoading: isLoadingProduct, error } = useProduct({
+        productId: currentProductId || '',
+        enabled: !!currentProductId
+    });
+
     const [interacted, setInteracted] = useState(false);
 
-    if (isLoading) {
+    const handleNext = () => {
+        dispatch(nextProduct());
+        setInteracted(false); // Reset interaction hint
+    };
+
+    const handlePrev = () => {
+        dispatch(prevProduct());
+        setInteracted(false);
+    };
+
+    if (isLoadingIds || (isLoadingProduct && !product)) {
         return <ProductCardSkeleton />;
     }
 
@@ -34,7 +67,7 @@ export default function ProductCard({ productId }: ProductCardProps) {
         >
             {/* 3D Canvas Section - Top 65% */}
             <div
-                className="w-full h-[65%] relative"
+                className="w-full h-[65%] relative transition-colors duration-500"
                 style={{
                     background: `linear-gradient(180deg, ${product.backgroundColor}20 0%, #ffffff 100%)`
                 }}
@@ -76,6 +109,22 @@ export default function ProductCard({ productId }: ProductCardProps) {
                         </motion.div>
                     )}
                 </AnimatePresence>
+
+                {/* Navigation Buttons */}
+                <div className="absolute inset-x-0 top-1/2 -translate-y-1/2 flex justify-between px-4 pointer-events-none">
+                    <button
+                        onClick={handlePrev}
+                        className="w-10 h-10 rounded-full bg-white/80 backdrop-blur-sm shadow-lg flex items-center justify-center text-gray-800 hover:bg-white hover:scale-110 transition-all pointer-events-auto"
+                    >
+                        <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round"><path d="m15 18-6-6 6-6" /></svg>
+                    </button>
+                    <button
+                        onClick={handleNext}
+                        className="w-10 h-10 rounded-full bg-white/80 backdrop-blur-sm shadow-lg flex items-center justify-center text-gray-800 hover:bg-white hover:scale-110 transition-all pointer-events-auto"
+                    >
+                        <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round"><path d="m9 18 6-6-6-6" /></svg>
+                    </button>
+                </div>
             </div>
 
             {/* Product Details Section - Bottom 35% */}

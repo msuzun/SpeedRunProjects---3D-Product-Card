@@ -23,7 +23,7 @@ builder.Services.AddDbContext<AppDbContext>(options =>
 builder.Services.AddScoped<IProductRepository, ProductRepository>();
 builder.Services.AddScoped<IProductService, ProductService>();
 builder.Services.AddScoped<GetProductByIdValidator>();
-builder.Services.AddScoped<DataSeeder>();
+
 
 // CORS Configuration
 builder.Services.AddCors(options =>
@@ -38,13 +38,6 @@ builder.Services.AddCors(options =>
 });
 
 var app = builder.Build();
-
-// Seed Data
-using (var scope = app.Services.CreateScope())
-{
-    var seeder = scope.ServiceProvider.GetRequiredService<DataSeeder>();
-    seeder.Seed();
-}
 
 // Configure the HTTP request pipeline.
 if (app.Environment.IsDevelopment())

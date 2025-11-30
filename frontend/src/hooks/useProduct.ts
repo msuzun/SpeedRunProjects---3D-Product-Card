@@ -27,6 +27,16 @@ const fetchProduct = async (productId: string): Promise<ProductResponse> => {
   return response.json();
 };
 
+const fetchProductIds = async (): Promise<string[]> => {
+  const response = await fetch(`${API_BASE_URL}/api/products/ids`);
+
+  if (!response.ok) {
+    throw new Error(`Failed to fetch product IDs: ${response.statusText}`);
+  }
+
+  return response.json();
+};
+
 export const useProduct = ({ productId, enabled = true }: UseProductOptions) => {
   return useQuery({
     queryKey: ['product', productId],
@@ -40,6 +50,13 @@ export const useProduct = ({ productId, enabled = true }: UseProductOptions) => 
       modelUrl: data.modelUrl,
       backgroundColor: data.backgroundColor,
     }),
+  });
+};
+
+export const useProductIds = () => {
+  return useQuery({
+    queryKey: ['productIds'],
+    queryFn: fetchProductIds,
   });
 };
 
