@@ -8,7 +8,7 @@ function App() {
 
   return (
     <Provider store={store}>
-      <div className="w-full min-h-screen bg-gray-100 flex items-center justify-center p-4">
+      <div className="w-full h-screen bg-gradient-to-br from-neutral-900 to-neutral-800 flex items-center justify-center overflow-hidden">
         <ProductCard productId={DEMO_PRODUCT_ID} />
       </div>
     </Provider>

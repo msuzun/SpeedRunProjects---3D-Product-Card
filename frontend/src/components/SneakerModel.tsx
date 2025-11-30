@@ -59,8 +59,9 @@ export default function SneakerModel({ modelUrl = 'https://raw.githubusercontent
   return (
     <>
       {/* Lights */}
-      <ambientLight intensity={0.5} />
-      <directionalLight position={[10, 10, 5]} intensity={1.5} castShadow />
+      <ambientLight intensity={0.8} />
+      <spotLight position={[10, 10, 10]} angle={0.15} penumbra={1} intensity={1} castShadow />
+      <directionalLight position={[-5, 5, 5]} intensity={0.5} />
 
       {/* Environment */}
       <Environment preset="city" />
@@ -76,14 +77,13 @@ export default function SneakerModel({ modelUrl = 'https://raw.githubusercontent
           setLocalHover(false);
           dispatch(setHovered(false));
         }}
-        scale={1.5}
+        scale={2.2} // Increased scale for better visibility
+        position={[0, -0.5, 0]} // Center the model vertically
       >
         <primitive object={nodes.scene || nodes.Scene || nodes} />
       </group>
 
-      <ContactShadows position={[0, -0.8, 0]} opacity={0.5} scale={10} blur={1.5} far={0.8} />
+      <ContactShadows position={[0, -1.4, 0]} opacity={0.4} scale={10} blur={2.5} far={1.6} />
     </>
   );
 }
-
-
